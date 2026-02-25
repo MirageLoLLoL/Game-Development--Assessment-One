@@ -433,6 +433,61 @@ MonoBehaviour:
   p31:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &-475880005115270538
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dab70fa5224ef4dbf85a10b2595c9c, type: 3}
+  m_Name: BenDayBloomEffectComponent
+  m_EditorClassIdentifier: Assembly-CSharp::BenDayBloomEffectComponent
+  active: 1
+  <displayName>k__BackingField: 
+  threshold:
+    <fieldHash>k__BackingField: 166187168
+    m_OverrideState: 1
+    m_Value: 0.9
+  intensity:
+    <fieldHash>k__BackingField: 405537560
+    m_OverrideState: 1
+    m_Value: 1
+  scatter:
+    <fieldHash>k__BackingField: 644887952
+    m_OverrideState: 1
+    m_Value: 0.7
+  clamp:
+    <fieldHash>k__BackingField: 884238344
+    m_OverrideState: 1
+    m_Value: 65472
+  maxIterations:
+    <fieldHash>k__BackingField: 1123588736
+    m_OverrideState: 1
+    m_Value: 6
+  tint:
+    <fieldHash>k__BackingField: 1362939128
+    m_OverrideState: 1
+    m_Value:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    hdr: 0
+  dotsDensity:
+    <fieldHash>k__BackingField: 1602289520
+    m_OverrideState: 1
+    m_Value: 10
+  dotCutoff:
+    <fieldHash>k__BackingField: 1841639912
+    m_OverrideState: 1
+    m_Value: 0.4
+  scrollDirection:
+    <fieldHash>k__BackingField: 2080990304
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

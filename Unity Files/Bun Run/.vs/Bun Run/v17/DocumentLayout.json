@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Library\\PackageCache\\com.unity.test-framework@d97b7cd61ded\\UnityEngine.TestRunner\\UnityEngine.TestRunner.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.test-framework@d97b7cd61ded\\UnityEngine.TestRunner\\UnityEngine.TestRunner.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\objects\\models\\character\\materials\\bendeibloomeffectcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\objects\\models\\character\\materials\\bendeibloomeffectcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnityEngine.TestRunner.asmdef",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Library\\PackageCache\\com.unity.test-framework@d97b7cd61ded\\UnityEngine.TestRunner\\UnityEngine.TestRunner.asmdef",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.test-framework@d97b7cd61ded\\UnityEngine.TestRunner\\UnityEngine.TestRunner.asmdef",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Library\\PackageCache\\com.unity.test-framework@d97b7cd61ded\\UnityEngine.TestRunner\\UnityEngine.TestRunner.asmdef",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.test-framework@d97b7cd61ded\\UnityEngine.TestRunner\\UnityEngine.TestRunner.asmdef",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2026-02-25T03:18:55.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BendeiBloomEffectComponent.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Objects\\Models\\Character\\Materials\\BendeiBloomEffectComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\Objects\\Models\\Character\\Materials\\BendeiBloomEffectComponent.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Objects\\Models\\Character\\Materials\\BendeiBloomEffectComponent.cs",
+              "RelativeToolTip": "Assets\\Objects\\Models\\Character\\Materials\\BendeiBloomEffectComponent.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T15:47:42.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraMovement.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\CameraMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraMovement.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\CameraMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T02:19:13.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Movement.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
               "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCUAAAA5AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:07:44.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:07:44.055Z"
             }
           ]
         }
