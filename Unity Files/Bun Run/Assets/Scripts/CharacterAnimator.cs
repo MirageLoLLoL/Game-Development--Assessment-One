@@ -1,6 +1,5 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.ProBuilder.Shapes;
 
 public class CharacterAnimator : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class CharacterAnimator : MonoBehaviour
     private bool falling;
     public Transform playerRotation;
     public LayerMask groundLayer;
+    public bool outOfBounds;
 
     private void Update()
     {
@@ -79,6 +79,13 @@ public class CharacterAnimator : MonoBehaviour
             animator.SetBool("Ascending", true);
             animator.SetBool("Descending", false);
         }
-
+        if (outOfBounds)
+        {
+            animator.SetBool("OutOfBounds", true);
+        }
+        else
+        {
+            animator.SetBool("OutOfBounds", false);
+        }
     }
 }
