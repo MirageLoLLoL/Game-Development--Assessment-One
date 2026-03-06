@@ -29,10 +29,11 @@ public class CharacterAnimator : MonoBehaviour
     void Face()
     {
         transform.rotation = orbitCamera.gravityAlignment;
-        playerRotation.transform.forward = rb.linearVelocity;
-        playerRotation.transform.localEulerAngles = new Vector3(0f, playerRotation.transform.localEulerAngles.y, 0f);
-        
-
+        if (speedMeasure > 0.5f)
+        {
+            playerRotation.transform.forward = rb.linearVelocity;
+            playerRotation.transform.localEulerAngles = new Vector3(0f, playerRotation.transform.localEulerAngles.y, 0f);
+        }
     }
     void AnimationController()
     {

@@ -10,6 +10,10 @@ public class RespawnManager : MonoBehaviour
 
     private void Awake()
     {
-        checkpointScript = checkpointObjects[checkpointCount].GetComponent<Checkpoint>();
+        if (checkpointScript != null)
+        {
+            checkpointScript = checkpointObjects[checkpointCount].GetComponent<Checkpoint>();
+        }
+        else return;
     }
 }
