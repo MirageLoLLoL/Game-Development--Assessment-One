@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,31 +35,28 @@ public class Respawner : MonoBehaviour
 
     private IEnumerator DeathTimer()
     {
-        var tempColor = blackout.color;
-        for (float f = 0; f <= 2; f += Time.deltaTime)
-        {
-            tempColor.a = Mathf.Lerp(0f, 1f, f / 2);
-            yield return null;
-        }
         yield return new WaitForSeconds(2f);
-        yield return new WaitForFixedUpdate();
-        animator.rb.linearVelocity = Vector3.zero;
+        yield return new WaitForFixedUpdate(); //Prevents respawn method from not working randomly
+        if (!movement.isIn) //Checks after the wait to see if player is still outside of the boundaries and not just moving between them
+        {
+            animator.rb.linearVelocity = Vector3.zero;
 
-        if (respawnManager.checkpointCount <= 0)
-        {
-            movement.transform.position = startSpawn.transform.position;
-            animator.rb.transform.position = startSpawn.transform.position;
-            orbitCamera.transform.position = startSpawn.transform.position;
-            print("Respawning at start");
-        }
-        else
-        {
-            yield return new WaitForSeconds(1.5f);
-            movement.transform.position = respawnManager.storedLocation;
-            animator.rb.transform.position = respawnManager.storedLocation;
-            orbitCamera.transform.position = respawnManager.storedLocation;
-            print("Respawning at checkpoint");
-            
+            if (respawnManager.checkpointCount <= 0)
+            {
+                movement.transform.position = startSpawn.transform.position;
+                animator.rb.transform.position = startSpawn.transform.position;
+                orbitCamera.transform.position = startSpawn.transform.position;
+                print("Respawning at start");
+            }
+            else
+            {
+                yield return new WaitForSeconds(1.5f);
+                movement.transform.position = respawnManager.storedLocation;
+                animator.rb.transform.position = respawnManager.storedLocation;
+                orbitCamera.transform.position = respawnManager.storedLocation;
+                print("Respawning at checkpoint");
+
+            }
         }
     }
 }

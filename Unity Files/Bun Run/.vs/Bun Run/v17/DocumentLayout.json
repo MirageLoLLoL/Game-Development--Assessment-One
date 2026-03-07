@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\playerphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\respawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\respawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\orbitcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orbitcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\respawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\respawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\characteranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characteranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\playerphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,11 +34,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAlwEUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T01:36:35.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Respawner.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Respawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Respawner.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Respawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Respawner.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwCcAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:31:00.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrbitCamera.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\OrbitCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OrbitCamera.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\OrbitCamera.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OrbitCamera.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAmwIcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:29:40.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CharacterAnimator.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\CharacterAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterAnimator.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\CharacterAnimator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterAnimator.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:27:32.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RespawnManager.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\RespawnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RespawnManager.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\RespawnManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RespawnManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:22:36.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlayerPhysics.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\PlayerPhysics.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerPhysics.cs",
@@ -26,8 +108,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerPhysics.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAswE0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T09:57:17.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T09:57:17.26Z"
             }
           ]
         }

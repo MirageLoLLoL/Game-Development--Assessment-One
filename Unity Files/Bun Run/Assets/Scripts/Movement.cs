@@ -46,6 +46,7 @@ public class Movement : MonoBehaviour
     public bool OnGround => groundContactCount > 0;
 
     bool OnSteep => steepContactCount > 0;
+    public Respawner respawner;
 
     int jumpPhase;
 
@@ -61,10 +62,12 @@ public class Movement : MonoBehaviour
 
     void Awake()
     {
+        transform.position = respawner.startSpawn.transform.position;
         Cursor.lockState = CursorLockMode.Confined;
         body = GetComponent<Rigidbody>();
         body.useGravity = false;
         OnValidate();
+        body.transform.position = respawner.startSpawn.transform.position;
     }
 
     void Update()
