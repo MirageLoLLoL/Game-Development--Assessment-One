@@ -43,6 +43,7 @@ public class OrbitCamera : MonoBehaviour
 
     public Quaternion gravityAlignment = Quaternion.identity;
     public bool outOfBounds;
+    public Movement movement;
 
 
     Quaternion orbitRotation;
@@ -133,14 +134,14 @@ public class OrbitCamera : MonoBehaviour
 
     void UpdateFocusPoint()
     {
-        if (!outOfBounds)
-        {
             previousFocusPoint = focusPoint;
             Vector3 targetPoint = focus.position;
             if (focusRadius > 0f)
             {
                 float distance = Vector3.Distance(targetPoint, focusPoint);
                 float t = 1f;
+            if (!outOfBounds || movement.isDone)
+            {
                 if (distance > 0.01f && focusCentering > 0f)
                 {
                     t = Mathf.Pow(1f - focusCentering, Time.unscaledDeltaTime);
@@ -151,11 +152,11 @@ public class OrbitCamera : MonoBehaviour
                 }
                 focusPoint = Vector3.Lerp(targetPoint, focusPoint, t);
             }
+            }
             else
             {
                 focusPoint = targetPoint;
             }
-        }
     }
 
     bool ManualRotation()

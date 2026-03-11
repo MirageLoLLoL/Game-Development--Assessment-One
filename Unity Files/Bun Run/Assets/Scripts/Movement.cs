@@ -51,7 +51,7 @@ public class Movement : MonoBehaviour
     int jumpPhase;
 
     float minGroundDotProduct, minStairsDotProduct;
-    public bool isIn;
+    public bool isIn, isDone;
     int stepsSinceLastGrounded, stepsSinceLastJump;
     public Vector2 playerInput;
     void OnValidate()
@@ -64,6 +64,7 @@ public class Movement : MonoBehaviour
     {
         transform.position = respawner.startSpawn.transform.position;
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
         body = GetComponent<Rigidbody>();
         body.useGravity = false;
         OnValidate();
@@ -72,7 +73,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(isIn)
+        if(isIn || isDone)
         { 
         playerInput.x = Input.GetAxis("Horizontal");
         playerInput.y = Input.GetAxis("Vertical");
