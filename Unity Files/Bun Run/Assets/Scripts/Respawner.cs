@@ -13,7 +13,9 @@ public class Respawner : MonoBehaviour
     public Transform startSpawn;
     public OrbitCamera orbitCamera;
     public RespawnManager respawnManager;
+    public FadeController fadeController;
     public Color blackout;
+    public GameObject burnEffectPrefab;
     bool frozen;
 
     private void OnTriggerEnter(Collider other)
@@ -39,24 +41,50 @@ public class Respawner : MonoBehaviour
         yield return new WaitForFixedUpdate(); //Prevents respawn method from not working randomly
         if (!movement.isIn) //Checks after the wait to see if player is still outside of the boundaries and not just moving between them
         {
-            animator.rb.linearVelocity = Vector3.zero;
+            yield return StartCoroutine(RespawnSequence());
+        }
+    }
 
-            if (respawnManager.checkpointCount <= 0)
-            {
-                movement.transform.position = startSpawn.transform.position;
-                animator.rb.transform.position = startSpawn.transform.position;
-                orbitCamera.transform.position = startSpawn.transform.position;
-                print("Respawning at start");
-            }
-            else
-            {
-                yield return new WaitForSeconds(1.5f);
-                movement.transform.position = respawnManager.storedLocation;
-                animator.rb.transform.position = respawnManager.storedLocation;
-                orbitCamera.transform.position = respawnManager.storedLocation;
-                print("Respawning at checkpoint");
+    private IEnumerator RespawnSequence()
+    {
+        // add burning effect
+        // Instantiate(burnEffectPrefab, movement.transform.position, Quaternion.identity);
+        var burnEffect = Instantiate(burnEffectPrefab, movement.transform.position, Quaternion.identity);
+        burnEffect.transform.SetParent(movement.transform);
 
-            }
+        yield return new WaitForSeconds(3f);
+        //fade to black
+        yield return StartCoroutine(fadeController.Fade(0f, 1f, 1f));
+        //stop momentum
+        animator.rb.linearVelocity = Vector3.zero;
+        //teleport player
+        if (respawnManager.checkpointCount <= 0)
+        {
+            movement.transform.position = startSpawn.transform.position;
+            animator.rb.transform.position = startSpawn.transform.position;
+            orbitCamera.transform.position = startSpawn.transform.position;
+            print("Respawning at start");
+        }
+        else
+        {
+            yield return new WaitForSeconds(1.5f);
+            movement.transform.position = respawnManager.storedLocation;
+            animator.rb.transform.position = respawnManager.storedLocation;
+            orbitCamera.transform.position = respawnManager.storedLocation;
+            print("Respawning at checkpoint");
+
+        }
+        //destroy fire
+        Destroy(burnEffect, 0f);
+        // fade back from black
+        yield return StartCoroutine(fadeController.Fade(1f, 0f, 1f));
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            StartCoroutine(RespawnSequence());
         }
     }
 }
