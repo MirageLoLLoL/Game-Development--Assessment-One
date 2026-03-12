@@ -37,7 +37,7 @@ public class Respawner : MonoBehaviour
 
     private IEnumerator DeathTimer()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.1f);
         yield return new WaitForFixedUpdate(); //Prevents respawn method from not working randomly
         if (!movement.isIn) //Checks after the wait to see if player is still outside of the boundaries and not just moving between them
         {
