@@ -140,7 +140,7 @@ public class OrbitCamera : MonoBehaviour
             {
                 float distance = Vector3.Distance(targetPoint, focusPoint);
                 float t = 1f;
-            if (!outOfBounds || movement.isDone)
+            if (!outOfBounds && !movement.isDone)
             {
                 if (distance > 0.01f && focusCentering > 0f)
                 {

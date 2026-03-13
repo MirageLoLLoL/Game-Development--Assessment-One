@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
     LayerMask probeMask = -1, stairsMask = -1;
 
     Rigidbody body;
+    public GameObject modelTransform;
 
     public Vector3 velocity, desiredVelocity;
 
@@ -49,6 +50,7 @@ public class Movement : MonoBehaviour
     public Respawner respawner;
 
     int jumpPhase;
+    public float downwardsForce;
 
     float minGroundDotProduct, minStairsDotProduct;
     public bool isIn, isDone;
@@ -73,7 +75,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(isIn || isDone)
+        if(isIn && !isDone)
         { 
         playerInput.x = Input.GetAxis("Horizontal");
         playerInput.y = Input.GetAxis("Vertical");
@@ -130,6 +132,7 @@ public class Movement : MonoBehaviour
         if (OnGround || SnapToGround() || CheckSteepContacts())
         {
             stepsSinceLastGrounded = 0;
+            downwardsForce = 1;
             if (stepsSinceLastJump > 1)
             {
                 jumpPhase = 0;
@@ -142,6 +145,13 @@ public class Movement : MonoBehaviour
         else
         {
             contactNormal = upAxis;
+            if (slamInput)
+            {
+                print("You're slamming");
+                downwardsForce = 10f;
+                body.AddForce(-modelTransform.transform.up * downwardsForce, ForceMode.Impulse);
+                slamInput = false;
+            }
         }
     }
 
@@ -253,7 +263,7 @@ public class Movement : MonoBehaviour
         {
             jumpSpeed = Mathf.Max(jumpSpeed - alignedSpeed, 0f);
         }
-        velocity += jumpDirection * jumpSpeed;
+        velocity += jumpDirection * jumpSpeed * downwardsForce;
     }
 
     void OnCollisionEnter(Collision collision)
