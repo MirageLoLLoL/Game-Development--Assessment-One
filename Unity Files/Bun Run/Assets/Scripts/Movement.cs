@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -50,6 +49,10 @@ public class Movement : MonoBehaviour
     public Respawner respawner;
 
     int jumpPhase;
+
+    [SerializeField, Range(0, 100)]
+    float appliedForce = 10;
+
     public float downwardsForce;
 
     float minGroundDotProduct, minStairsDotProduct;
@@ -148,7 +151,7 @@ public class Movement : MonoBehaviour
             if (slamInput)
             {
                 print("You're slamming");
-                downwardsForce = 10f;
+                downwardsForce = appliedForce;
                 body.AddForce(-modelTransform.transform.up * downwardsForce, ForceMode.Impulse);
                 slamInput = false;
             }

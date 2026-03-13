@@ -77,6 +77,7 @@ public class Respawner : MonoBehaviour
         //destroy fire
         Destroy(burnEffect, 0f);
         // fade back from black
+        orbitCamera.outOfBounds = false;
         yield return StartCoroutine(fadeController.Fade(1f, 0f, 1f));
     }
 
