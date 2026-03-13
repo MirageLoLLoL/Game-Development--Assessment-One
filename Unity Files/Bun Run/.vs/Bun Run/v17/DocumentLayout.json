@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\menuanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menuanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\menufunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menufunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\stare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|d:\\tafe\\programming\\semester 1\\wk1\\game design\\assessment 1\\game-development--assessment-one\\unity files\\bun run\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A184C52F-6046-B374-C409-5674DF2CC073}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,24 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuFunctions.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\MenuFunctions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuFunctions.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\MenuFunctions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuFunctions.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T02:55:38.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MenuAnim.cs",
+              "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\MenuAnim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuAnim.cs",
+              "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\MenuAnim.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuAnim.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwDUAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T02:51:30.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Stare.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Stare.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Stare.cs",
               "ToolTip": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Stare.cs",
               "RelativeToolTip": "Assets\\Scripts\\Stare.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T16:44:07.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Timer.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Timer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timer.cs",
@@ -59,12 +93,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Timer.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAwBsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T15:03:23.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T15:03:23.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GoalScript.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\GoalScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoalScript.cs",
@@ -76,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Movement.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
@@ -84,12 +117,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAtwDUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T01:36:35.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-07T01:36:35.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Respawner.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\Respawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Respawner.cs",
@@ -101,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrbitCamera.cs",
               "DocumentMoniker": "D:\\TAFE\\PROGRAMMING\\Semester 1\\WK1\\Game Design\\ASSESSMENT 1\\Game-Development--Assessment-One\\Unity Files\\Bun Run\\Assets\\Scripts\\OrbitCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OrbitCamera.cs",

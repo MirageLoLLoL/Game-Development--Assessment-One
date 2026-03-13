@@ -7,10 +7,14 @@ public class MenuFunctions : MonoBehaviour
     bool switcher;
     public GameObject menuA;
     public GameObject menuB;
+    public MenuAnim menuAnim;
     public void SwitchMenu()
     {
         menuB.SetActive(true);
-        menuA.SetActive(false);
+        if (menuAnim.isHidden)
+        {
+            menuA.SetActive(false);
+        }
     }
     public void PlayLevel()
     {
