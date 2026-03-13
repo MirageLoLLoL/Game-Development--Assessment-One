@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
 
     public Vector3 upAxis, rightAxis, forwardAxis;
 
-    public bool desiredJump;
+    public bool desiredJump, slamInput;
 
     Vector3 contactNormal, steepNormal;
 
@@ -95,6 +95,7 @@ public class Movement : MonoBehaviour
             new Vector3(playerInput.x, 0f, playerInput.y) * maxSpeed;
 
         desiredJump |= Input.GetButtonDown("Jump");
+        slamInput |= Input.GetButtonDown("Slam");
     }
 
     void FixedUpdate()
