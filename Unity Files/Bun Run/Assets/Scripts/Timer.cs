@@ -6,7 +6,7 @@ using TMPro;
 public class ProgressionTimer : MonoBehaviour
 {
     public float currentTime;
-    bool hasInputted = false;
+    public bool hasInputted = false;
     public bool isOver = false;
     public bool started;
     public TMP_Text timerDisplay;
