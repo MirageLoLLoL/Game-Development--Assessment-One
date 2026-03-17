@@ -2,58 +2,27 @@ using UnityEngine;
 
 public class MenuAnim : MonoBehaviour
 {
-    public Vector2 startPosition, goalPosition, currentPosition;
+    public Vector2 startPosition, goalPosition;
+    public Vector2 currentPosition;
     public bool isHidden;
-    public int move;
+    public int moveSpeed;
     public void OpenUp()
     {
-        
+        isHidden =! isHidden;
+    }
+    private void FixedUpdate()
+    {
         if (isHidden)
         {
-            if (currentPosition != goalPosition)
-            {
-                move = 1;
-            }
-            else
-            {
-                isHidden = false;
-                move = 0;
-            }
+            print("showing");
+            currentPosition = Vector2.Lerp(currentPosition, goalPosition, Time.deltaTime * moveSpeed);
+            transform.position = currentPosition;
         }
         else
         {
-            if (currentPosition != startPosition)
-            {
-                move = 2;
-            }
-            else
-            {
-                isHidden = true;
-                move = 0;
-            }
-        }
-    }
-    private void Update()
-    {
-        transform.position = currentPosition;
-        switch (move)
-        {
-            case 0:
-                {
-                    return;
-                }
-            case 1:
-                {
-                    print("moving");
-                    Vector2.Lerp(currentPosition, goalPosition, Time.deltaTime * 2);
-                    return;
-                }
-            case 2:
-                {
-                    print("moving");
-                    Vector2.Lerp(currentPosition, startPosition, Time.deltaTime * 2);
-                    return;
-                }
+            print("hiding");
+            currentPosition = Vector2.Lerp(currentPosition, startPosition, Time.deltaTime * moveSpeed);
+            transform.position = currentPosition;
         }
     }
 }
