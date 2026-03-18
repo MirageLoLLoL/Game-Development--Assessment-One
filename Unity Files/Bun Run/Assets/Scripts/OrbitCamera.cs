@@ -134,43 +134,50 @@ public class OrbitCamera : MonoBehaviour
 
     void UpdateFocusPoint()
     {
+        if (!movement.isDone)
+        {
             previousFocusPoint = focusPoint;
             Vector3 targetPoint = focus.position;
             if (focusRadius > 0f)
             {
                 float distance = Vector3.Distance(targetPoint, focusPoint);
                 float t = 1f;
-            if (!outOfBounds || movement.isDone)
-            {
-                if (distance > 0.01f && focusCentering > 0f)
+                if (!outOfBounds)
                 {
-                    t = Mathf.Pow(1f - focusCentering, Time.unscaledDeltaTime);
+                    if (distance > 0.01f && focusCentering > 0f)
+                    {
+                        t = Mathf.Pow(1f - focusCentering, Time.unscaledDeltaTime);
+                    }
+                    if (distance > focusRadius)
+                    {
+                        t = Mathf.Min(t, focusRadius / distance);
+                    }
+                    focusPoint = Vector3.Lerp(targetPoint, focusPoint, t);
                 }
-                if (distance > focusRadius)
-                {
-                    t = Mathf.Min(t, focusRadius / distance);
-                }
-                focusPoint = Vector3.Lerp(targetPoint, focusPoint, t);
-            }
             }
             else
             {
                 focusPoint = targetPoint;
             }
+        }
     }
 
     bool ManualRotation()
     {
-        Vector2 input = new Vector2(
-            Input.GetAxis("Mouse Y"),
-            Input.GetAxis("Mouse X")
-        );
-        const float e = 0.001f;
-        if (input.x < -e || input.x > e || input.y < -e || input.y > e)
+        if (!movement.isDone)
         {
-            orbitAngles += rotationSpeed * Time.unscaledDeltaTime * input;
-            lastManualRotationTime = Time.unscaledTime;
-            return true;
+            Vector2 input = new Vector2(
+                Input.GetAxis("Mouse Y"),
+                Input.GetAxis("Mouse X")
+            );
+
+            const float e = 0.001f;
+            if (input.x < -e || input.x > e || input.y < -e || input.y > e)
+            {
+                orbitAngles += rotationSpeed * Time.unscaledDeltaTime * input;
+                lastManualRotationTime = Time.unscaledTime;
+                return true;
+            }
         }
         return false;
     }

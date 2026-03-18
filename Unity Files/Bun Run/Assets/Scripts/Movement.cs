@@ -49,11 +49,13 @@ public class Movement : MonoBehaviour
     public Respawner respawner;
 
     int jumpPhase;
+    float downwardsForce = 1f;
 
     float minGroundDotProduct, minStairsDotProduct;
     public bool isIn, isDone;
     int stepsSinceLastGrounded, stepsSinceLastJump;
     public Vector2 playerInput;
+    CharacterAnimator modelTransform;
     void OnValidate()
     {
         minGroundDotProduct = Mathf.Cos(maxGroundAngle * Mathf.Deg2Rad);
@@ -66,6 +68,7 @@ public class Movement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
         body = GetComponent<Rigidbody>();
+        modelTransform = GetComponentInChildren<CharacterAnimator>();
         body.useGravity = false;
         OnValidate();
         body.transform.position = respawner.startSpawn.transform.position;
@@ -73,7 +76,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(isIn || isDone)
+        if(isIn && !isDone)
         { 
         playerInput.x = Input.GetAxis("Horizontal");
         playerInput.y = Input.GetAxis("Vertical");
@@ -119,6 +122,7 @@ public class Movement : MonoBehaviour
     void ClearState()
     {
         groundContactCount = steepContactCount = 0;
+        downwardsForce = 1f;
         contactNormal = steepNormal = Vector3.zero;
     }
 
@@ -142,6 +146,13 @@ public class Movement : MonoBehaviour
         else
         {
             contactNormal = upAxis;
+            if (slamInput)
+            {
+                print("You're slamming");
+                downwardsForce = 10f;
+                body.AddForce(-modelTransform.transform.up * downwardsForce, ForceMode.Impulse);
+                slamInput = false;
+            }
         }
     }
 

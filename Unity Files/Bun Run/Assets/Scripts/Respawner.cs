@@ -60,17 +60,20 @@ public class Respawner : MonoBehaviour
         //teleport player
         if (respawnManager.checkpointCount <= 0)
         {
+            yield return new WaitForFixedUpdate();
             movement.transform.position = startSpawn.transform.position;
             animator.rb.transform.position = startSpawn.transform.position;
             orbitCamera.transform.position = startSpawn.transform.position;
+            animator.speedMeasure = 0f;
             print("Respawning at start");
         }
         else
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForFixedUpdate();
             movement.transform.position = respawnManager.storedLocation;
             animator.rb.transform.position = respawnManager.storedLocation;
             orbitCamera.transform.position = respawnManager.storedLocation;
+            animator.speedMeasure = 0f;
             print("Respawning at checkpoint");
 
         }
