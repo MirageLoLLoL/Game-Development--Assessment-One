@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GoalScript : MonoBehaviour
@@ -13,5 +14,11 @@ public class GoalScript : MonoBehaviour
         exitLevel.buttons.gameObject.SetActive(true);
         timer.SetBestScore();
         Cursor.visible = true;
+        StartCoroutine(WaitAndPause());
+    }
+    private IEnumerator WaitAndPause()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Time.timeScale = 0f;
     }
 }

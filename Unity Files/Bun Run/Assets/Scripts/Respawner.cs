@@ -20,6 +20,7 @@ public class Respawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        movement.respawner = gameObject.GetComponent<Respawner>();
         movement.isIn = true;
         animator.outOfBounds = false;
         orbitCamera.outOfBounds = false;

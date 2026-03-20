@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -30,7 +29,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField]
     LayerMask probeMask = -1, stairsMask = -1;
-
+    
     Rigidbody body;
 
     public Vector3 velocity, desiredVelocity;
@@ -65,9 +64,12 @@ public class Movement : MonoBehaviour
     void Awake()
     {
         transform.position = respawner.startSpawn.transform.position;
+        transform.rotation = respawner.startSpawn.transform.rotation;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
         body = GetComponent<Rigidbody>();
+        body.transform.rotation = respawner.startSpawn.transform.rotation;
+        body.AddForce(respawner.startSpawn.transform.forward * 0.001f);
         modelTransform = GetComponentInChildren<CharacterAnimator>();
         body.useGravity = false;
         OnValidate();
@@ -149,7 +151,7 @@ public class Movement : MonoBehaviour
             if (slamInput)
             {
                 print("You're slamming");
-                downwardsForce = 10f;
+                downwardsForce = 20f;
                 body.AddForce(-modelTransform.transform.up * downwardsForce, ForceMode.Impulse);
                 slamInput = false;
             }

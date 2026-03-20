@@ -13,6 +13,10 @@ public class CharacterAnimator : MonoBehaviour
     public LayerMask groundLayer;
     public bool outOfBounds;
 
+    private void Start()
+    {
+        playerRotation.transform.rotation = movement.respawner.startSpawn.transform.rotation;
+    }
     private void Update()
     {
         SpeedMeasure();
@@ -87,6 +91,14 @@ public class CharacterAnimator : MonoBehaviour
         else
         {
             animator.SetBool("OutOfBounds", false);
+        }
+        if (movement.slamInput)
+        {
+            animator.SetBool("Slamming", true);
+        }
+        else
+        {
+            animator.SetBool("Slamming", false);
         }
     }
 }
