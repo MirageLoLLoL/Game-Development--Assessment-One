@@ -152,7 +152,7 @@ public class Movement : MonoBehaviour
             if (slamInput)
             {
                 print("You're slamming");
-                downwardsForce = 10f;
+                downwardsForce = 20f;
                 body.AddForce(-modelTransform.transform.up * downwardsForce, ForceMode.Impulse);
                 slamInput = false;
             }

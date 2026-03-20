@@ -92,5 +92,13 @@ public class CharacterAnimator : MonoBehaviour
         {
             animator.SetBool("OutOfBounds", false);
         }
+        if (movement.slamInput)
+        {
+            animator.SetBool("Slamming", true);
+        }
+        else
+        {
+            animator.SetBool("Slamming", false);
+        }
     }
 }
