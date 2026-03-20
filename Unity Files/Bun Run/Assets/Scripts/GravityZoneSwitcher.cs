@@ -5,6 +5,11 @@ public class GravityZoneSwitcher : MonoBehaviour
     bool switcher;
     public GameObject[] zoneA;
     public GameObject[] zoneB;
+
+    private void OnDisable()
+    {
+        switcher = !switcher;
+    }
     private void OnTriggerEnter(Collider other)
     {
         switcher =! switcher;

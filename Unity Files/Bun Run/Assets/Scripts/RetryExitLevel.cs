@@ -7,11 +7,12 @@ public class RestartExitLevel : MonoBehaviour
     public GameObject buttons;
     public void RestartLevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("TutorialLevel");
     }
     public void ExitLevel()
     {
-        //Replace with load back to menu when that's done
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 }

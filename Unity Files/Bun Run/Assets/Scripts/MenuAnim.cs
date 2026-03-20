@@ -10,6 +10,10 @@ public class MenuAnim : MonoBehaviour
     {
         isHidden =! isHidden;
     }
+    public void HideOthers()
+    {
+        isHidden = false;
+    }
     private void FixedUpdate()
     {
         if (isHidden)

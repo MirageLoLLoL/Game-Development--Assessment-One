@@ -13,6 +13,10 @@ public class CharacterAnimator : MonoBehaviour
     public LayerMask groundLayer;
     public bool outOfBounds;
 
+    private void Start()
+    {
+        playerRotation.transform.rotation = movement.respawner.startSpawn.transform.rotation;
+    }
     private void Update()
     {
         SpeedMeasure();

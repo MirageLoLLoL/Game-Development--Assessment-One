@@ -16,7 +16,7 @@ public class OrbitCamera : MonoBehaviour
     float focusCentering = 0.5f;
 
     [SerializeField, Range(1f, 360f)]
-    float rotationSpeed = 90f;
+    public float rotationSpeed = 90f;
 
     [SerializeField, Range(-89f, 89f)]
     float minVerticalAngle = -45f, maxVerticalAngle = 45f;
