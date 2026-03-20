@@ -5,6 +5,7 @@ public class Checkpoint : MonoBehaviour
     public RespawnManager respawnManager;
     public GameObject self;
     public GameObject particleParent;
+
     private void Awake()
     {
         self = gameObject;

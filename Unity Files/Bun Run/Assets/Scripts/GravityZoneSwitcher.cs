@@ -5,8 +5,10 @@ public class GravityZoneSwitcher : MonoBehaviour
     bool switcher;
     public GameObject[] zoneA;
     public GameObject[] zoneB;
+
     private void OnTriggerEnter(Collider other)
     {
+        AudioFxManager.Instance?.PlayGravityChange();
         switcher =! switcher;
         if (switcher)
         {
